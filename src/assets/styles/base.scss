@@ -1,0 +1,19 @@
+@import 'colors';
+@import 'vendor';
+@import 'fonts';
+
+// Dummy
+body {
+  background: url('../images/sunset.jpg') top center no-repeat;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif, serif;
+  color: #404040;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,17 @@
+@import 'src/assets/styles/variables';
+
+.container {
+  padding: 30px 0 0;
+  width: $width-lg;
+  margin: 0 auto;
+  min-height: 600px;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint-lg) {
+    width: 100%;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding-top: 0;
+  }
+}

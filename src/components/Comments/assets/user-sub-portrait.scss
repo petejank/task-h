@@ -1,0 +1,35 @@
+@import 'src/assets/styles/colors';
+
+.user-sub-portrait {
+  margin-top: -35px;
+  position: relative;
+
+  @at-root {
+    .user-sub-portrait__image-box {
+      border-radius: 50%;
+      border: 2px solid $gray-3;
+      width: 68px;
+      height: 68px;
+      margin: 0 auto;
+      background: gray;
+      overflow: hidden;
+    }
+
+    .user-sub-portrait__image {
+      width: 68px;
+      height: 68px;
+    }
+
+    .user-sub-portrait__name {
+      font-size: 11px;
+      text-align: center;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .user-sub-portrait__job {
+      font-size: 11px;
+      text-align: center;
+    }
+  }
+}

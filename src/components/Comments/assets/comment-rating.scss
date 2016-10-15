@@ -1,0 +1,32 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/utilities';
+
+.comment-rating {
+  @extend .clearfix;
+  height: 46px;
+  width: 305px;
+  border: 2px solid $gray-2;
+  margin: 25px auto;
+  border-radius: 3px;
+  overflow: hidden;
+
+  @at-root {
+    .comment-rating__thumb {
+      width: 68px;
+      height: 100%;
+      font-size: 22px;
+      font-weight: bold;
+      float: left;
+      line-height: 38px;
+      color: #FFF;
+    }
+
+    .comment-rating__thumb--positive {
+      background: $green;
+    }
+
+    .comment-rating__thumb--negative {
+      background: $red;
+    }
+  }
+}

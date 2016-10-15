@@ -1,0 +1,18 @@
+@import 'src/assets/styles/variables';
+@import 'src/assets/styles/utilities';
+@import 'src/assets/styles/mixins';
+
+.navbar {
+  $navbar-margin-bottom: 346px;
+
+  @extend .clearfix;
+  @include light-shadow();
+  width: 100%;
+  height: $navbar-height;
+  background: #FFF;
+  margin-bottom: $navbar-margin-bottom;
+
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: $navbar-margin-bottom + 100;
+  }
+}

@@ -1,0 +1,14 @@
+@import 'src/assets/styles/colors';
+
+.comments-outer-box {
+  background: $gray;
+  width: 100%;
+  margin-bottom: -50px;
+
+  @at-root {
+    .comments-outer-box__inner-box {
+      position: relative;
+      top: -168px;
+    }
+  }
+}

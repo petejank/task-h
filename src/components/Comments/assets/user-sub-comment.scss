@@ -1,0 +1,53 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/variables';
+
+.user-sub-comment {
+  position: relative;
+  padding: 23px 33px 55px;
+  background: $gray-3;
+  text-align: left;
+  margin: 46px -34px 0;
+
+  @media (max-width: $breakpoint-md) {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @at-root {
+    .user-sub-comment__arrow {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 25px solid $gray-3;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -15px;
+    }
+
+    .user-sub-comment__header {
+      margin: 0;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 13px;
+    }
+
+    .user-sub-comment__text {
+      position: relative;
+      line-height: 150%;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 35px;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, $gray-3 99%, $gray-3 100%);
+      }
+    }
+  }
+}

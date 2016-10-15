@@ -1,0 +1,26 @@
+@import 'src/assets/styles/colors';
+
+.comment-stars {
+  width: 233px;
+  float: left;
+  height: 100%;
+  line-height: 44px;
+
+  @at-root {
+    .comment-stars__star {
+      color: $gray-2;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0 5px;
+    }
+
+    .comment-stars__star--yellow {
+      color: $yellow;
+    }
+
+    .comment-stars__sum {
+      font-weight: bold;
+      margin: 0 10px;
+    }
+  }
+}

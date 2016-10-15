@@ -1,0 +1,55 @@
+@import 'src/assets/styles/variables';
+@import 'src/assets/styles/colors';
+
+.navbar-links {
+  float: right;
+  height: $navbar-height;
+
+  @media (max-width: $breakpoint-md) {
+    float: none;
+    clear: left;
+    height: auto;
+  }
+
+  @at-root {
+    .navbar-links__link {
+      height: 100%;
+      position: relative;
+      display: inline-block;
+      padding: 0 29px;
+      background: #FFF;
+      color: $blue;
+
+      @media (max-width: $breakpoint-md) {
+        display: block;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      &:hover {
+        background: $gray-1;
+      }
+
+      .navbar-links__link-text {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @media (max-width: $breakpoint-md) {
+          top: 0;
+          transform: none;
+        }
+      }
+    }
+
+    .navbar-links__link--active {
+      color: #000;
+      background: $gray;
+
+      &:hover {
+        background: $gray;
+      }
+    }
+  }
+}
